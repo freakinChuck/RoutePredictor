@@ -1,0 +1,275 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "D:\\Source\\RoutePredictor\\Source\\ExampleData\\RandomByCopilot.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "StartKm",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "EndKm",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "AbflussM3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "TimeMin",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.4651092428009157,
+        "RuntimeInSeconds": 0.019,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 2.5158408,
+            "L2Regularization": 146.10324,
+            "LabelColumnName": "TimeMin",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.46485911058168644,
+        "RuntimeInSeconds": 0.019,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 2.518603,
+            "L2Regularization": 145.97462,
+            "LabelColumnName": "TimeMin",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.46480486301587176,
+        "RuntimeInSeconds": 0.023,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.565712,
+            "L2Regularization": 150.88475,
+            "LabelColumnName": "TimeMin",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.46479662740582944,
+        "RuntimeInSeconds": 0.02,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.4931903,
+            "L2Regularization": 154.86111,
+            "LabelColumnName": "TimeMin",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.46478559396815261,
+        "RuntimeInSeconds": 0.021,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "StartKm",
+              "EndKm",
+              "AbflussM3"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.5673196,
+            "L2Regularization": 150.60674,
+            "LabelColumnName": "TimeMin",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "Concatenate",
+      "e2": "FastTreeRegression",
+      "e3": "FastForestRegression",
+      "e4": "LightGbmRegression",
+      "e5": "LbfgsPoissonRegressionRegression",
+      "e6": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * (e2 + e3 + e4 + e5 + e6)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "D:\\Source\\RoutePredictor\\Source\\RoutePredictor\\RoutePredictor.Core\\SpeedRegressionModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 600,
+    "OptimizeMetric": "RSquared",
+    "LabelColumn": "TimeMin",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
